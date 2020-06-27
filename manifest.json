@@ -2,5 +2,17 @@
   "name": "Life Quote Ads",
   "version": "1.0",
   "description": "Make your donation without your money by watching advertisement on normal surf website",
-  "manifest_version": 2
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "js": [
+        "service.js"
+      ],
+      "css": ["style.css"],
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ]
+    }
+  ]
 }
